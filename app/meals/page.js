@@ -2,11 +2,16 @@ import MealsGrid from "@/components/meals/meals-grid";
 import classes from "./page.module.css";
 import Link from "next/link";
 import { getMeals } from "../libs/meals";
+import { Suspense } from "react";
 
-export default async function MealsPage() {
-  // reaching out to database directly is safe when this file is a server component
-
+// extracted meal fetching here so I can wrap it in other React components
+async function Meals() {
   const meals = await getMeals();
+  return <MealsGrid meals={meals} />;
+}
+
+export default function MealsPage() {
+  // reaching out to database directly is safe when this file is a server component
 
   return (
     <>
@@ -23,7 +28,11 @@ export default async function MealsPage() {
         </p>
       </header>
       <main className={classes.main}>
-        <MealsGrid meals={meals} />
+        <Suspense
+          fallback={<p className={classes.loading}>Fetching meals...</p>}
+        >
+          <Meals />
+        </Suspense>
       </main>
     </>
   );

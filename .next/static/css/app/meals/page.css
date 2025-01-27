@@ -146,3 +146,20 @@
   }
 }
 
+.page_loading__COwas {
+  text-align: center;
+  animation: page_loading__COwas 1.2s ease-in-out infinite;
+}
+
+@keyframes page_loading__COwas {
+  0% {
+    color: #e9e9e9;
+  }
+  50% {
+    color: #b89b84;
+  }
+  100% {
+    color: #e9e9e9;
+  }
+}
+

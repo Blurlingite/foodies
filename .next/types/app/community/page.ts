@@ -1,8 +1,8 @@
-// File: /Users/blurlingite/Documents/foodies/app/meals/[mealSlug]/page.js
-import * as entry from '../../../../../app/meals/[mealSlug]/page.js'
+// File: /Users/blurlingite/Documents/foodies/app/community/page.js
+import * as entry from '../../../../app/community/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
-type TEntry = typeof import('../../../../../app/meals/[mealSlug]/page.js')
+type TEntry = typeof import('../../../../app/community/page.js')
 
 // Check that the entry is a valid entry
 checkFields<Diff<{
