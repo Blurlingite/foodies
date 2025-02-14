@@ -1,7 +1,7 @@
 import MealsGrid from "@/components/meals/meals-grid";
 import classes from "./page.module.css";
 import Link from "next/link";
-import { getMeals } from "../libs/meals";
+import { getMeals } from "../../lib/meals";
 import { Suspense } from "react";
 
 // extracted meal fetching here so I can wrap it in other React components
