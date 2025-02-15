@@ -1,5 +1,14 @@
 {
-  "node": {},
+  "node": {
+    "076b716d56bf7a59897552078517d83391b0fa50": {
+      "workers": {
+        "app/meals/share/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fblurlingite%2FDocuments%2Ffoodies%2Flib%2Factions.js%22%2C%5B%22shareMeal%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/meals/share/page": "rsc"
+      }
+    }
+  },
   "edge": {},
-  "encryptionKey": "0lAWezl8pFErCvE6wfVpy40ZOLVRFQV/qpeQgifJdTQ="
+  "encryptionKey": "Iw0yMEPTJcr+6uVMEM75Ud3I+5mlpbQW55acqg66GbE="
 }
