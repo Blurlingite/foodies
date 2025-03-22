@@ -4,6 +4,11 @@ import Link from "next/link";
 import { getMeals } from "../../lib/meals";
 import { Suspense } from "react";
 
+export const metadata = {
+  title: "All Meals",
+  description: "Browse the delicious meals, shared our vibrant community.",
+};
+
 // extracted meal fetching here so I can wrap it in other React components
 async function Meals() {
   const meals = await getMeals();
